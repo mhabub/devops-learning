@@ -1,1 +1,2 @@
-console.log('custom jsgit ');
+console.log('custom js ');
+console.log(' more commit');
