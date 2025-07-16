@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to VM
-        run: 
-          cd /var/www/html/
+        run: | 
+          cd /var/www/html
           git clone https://github.com/mhabub/devops-learning.git
