@@ -14,5 +14,5 @@ jobs:
 
       - name: Deploy to VM
         run: | 
-          cd /var/www/html
-          git clone https://github.com/mhabub/devops-learning.git
+          cd /var/www/html/devops-learning
+          git pull origin develop
