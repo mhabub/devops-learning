@@ -3,7 +3,7 @@ name: Deploy HTML Site
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   deploy:
