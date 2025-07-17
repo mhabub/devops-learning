@@ -10,8 +10,17 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v1
 
+      - name: Read file contents
+        id: read_file
+        uses: actions/read-file-github-action@v1
+        with:
+          path: "hello.txt"
+
+      - name: File contents
+        run: echo "${ steps.read_file.outputs.contents }"
+   
       - name: Deploy to VM
         run: | 
           cd /var/www/html/devops-learning
