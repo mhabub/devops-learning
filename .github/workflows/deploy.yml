@@ -19,7 +19,7 @@ jobs:
           path: hello.txt
 
       - name: File contents
-        run: echo "${ steps.read_file.outputs.contents }"
+        run: echo "${{ steps.read_file.outputs.contents }}"
    
       - name: Deploy to VM
         run: | 
