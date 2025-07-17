@@ -12,12 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v1
 
-      - name: Read file contents
-        id: read_file
-        uses: actions/checkout@v1
-        with:
-          path: "hello.txt"
-
       - name: File contents
         run: cat hello.txt
    
